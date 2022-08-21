@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokedex.css">
+    <title>Tabela</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokedex</h1>
+        </header>
+        <main>       
+            <table>
+                <th>Pokemon</th>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <tr>
+                    <td><img id="Bulbasauro" onclick="escolhaPokemonOne()" src="https://miro.medium.com/max/250/1*RewrUs3q0JTgZeBPJ5CvKw.png" alt="Bulbasauro"></td>
+                    <td>Bulbasaur</td>
+                    <td>Grama</td>
+                </tr>
+                <tr>
+                    <td><img id="Charmander" onclick="escolhaPokemonTwo()" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/f484215b-4e9a-42b5-9feb-77c3dec3a385/dala92b-9ecf2fc6-d8aa-4c90-b728-ef6509eebd90.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvaS9mNDg0MjE1Yi00ZTlhLTQyYjUtOWZlYi03N2MzZGVjM2EzODUvZGFsYTkyYi05ZWNmMmZjNi1kOGFhLTRjOTAtYjcyOC1lZjY1MDllZWJkOTAucG5nIn1dXX0.Z-SzfzJX39W98-GuoipoZ1XoYSjm3sNU-N6YYQQyxdU" alt="Charmander"></td> 
+                    <td>Charmander</td>
+                    <td>Fogo</td>
+                </tr>
+                <tr>
+                    <td><img id="Squirtle" onclick="escolhaPokemonThree()" src="https://vignette.wikia.nocookie.net/es.pokemon/images/e/e3/Squirtle.png/revision/latest?cb=20160309230820" alt="Squirtle"></td>
+                    <td>Squirtle</td>
+                    <td>Água</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <a href="Pokemonhome.html"><button>Voltar</button></a>
+            <button>Começar</button>
+        </footer>        
+    </div>
+    <script>
+        function escolhaPokemonOne(){
+            let pokemon = 'Bulbasauro';
+            let resposta = confirm('Você deseja escolher esse pokemon?');
+
+            if(resposta === true){
+                alert(`Parabéns! Você é o mais novo mestre pokemon! Você escolheu o ${pokemon}!`);
+            } else {
+                alert('Escolha um outro pokemon!');
+            }
+        }
+        function escolhaPokemonTwo(){
+            let pokemon ='Charmander';
+            let resposta = confirm('Você deseja escolher esse pokemon?');
+
+            if(resposta === true){
+                alert(`Parabéns! Você é o mais novo mestre pokemon! Você escolheu o ${pokemon}!`);
+            } else {
+                alert('Escolha um outro pokemon!');
+            }
+        }
+
+        function escolhaPokemonThree(){
+            let pokemon ='Squirtle';
+            let resposta = confirm('Você deseja escolher esse pokemon?');
+
+            if(resposta === true){
+                alert(`Parabéns! Você é o mais novo mestre pokemon! Você escolheu o ${pokemon}!`);
+            } else {
+                alert('Escolha um outro pokemon!');           
+            }
+        }
+        // function escolhaPokemon(){
+        //     const bulba = document.getElementById('Bulbasauro');
+        //     const charm = document.getElementById('Charmander');
+        //     const squirtle = document.getElementById('Squirtle');
+        //     let pokemon;
+        //     switch(pokemon){
+        //         case bulba:
+        //             pokemon = bulba
+        //             console.log('Bulbasauro');
+        //             break;
+        //         case charm:
+        //             pokemon = charm
+        //             console.log('Charmander');
+        //             break;
+        //         case squirtle:
+        //             pokemon = squirtle
+        //             console.log('Squirtle');
+        //             break;
+        //         default:
+        //         console.log('Erro!');
+        //         break;
+        //     }
+        //     return pokemon;
+        // }
+    </script>
+</body>
+</html>
+
+
+<!-- https://miro.medium.com/max/343/1*Hxptm5gIRc3HyYXzw5nfpw.png -->

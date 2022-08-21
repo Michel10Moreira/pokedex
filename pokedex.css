@@ -1,0 +1,120 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(75, 51, 51);
+}
+
+
+
+img{
+    width: 10rem;
+    /* height: 10rem; */
+    align-self: stretch;
+    
+}
+img:hover{
+    cursor: pointer;
+    image-rendering:pixelated;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 0.6fr 4fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+header{
+    grid-column: 1/4;
+    justify-self: center;
+    color: white;
+    margin-bottom: -1px;
+}
+
+
+main {
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+table, tr, th, td{
+    border: 1px solid greenyellow;
+    color: white;
+    border-spacing: 0;
+    border-radius: 2px;
+}
+
+td{
+    width: 10rem;
+    text-align: center;
+}
+
+footer{
+    grid-column: 1/4;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+button{
+    height: 2rem;
+    width: 10rem;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    font-family: cursive;
+    border: 1px solid greenyellow;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    height: 2.1rem;
+}
+
+h1, h2, a{
+    margin-left: 15px;
+    text-align: center;
+    font-family:cursive;
+    color: white;
+}
+
+/* Sobre a Página index */
+
+.container-index{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.6fr 4fr 1fr;
+    justify-content: center;
+}
+.main{
+    grid-column: 2/3;
+}
+.img{
+    margin: 0 2rem 0 4rem;
+    padding: 0 2rem 0 5rem ;
+}
+p {
+    text-align: justify;
+    color: white;
+    font-family: cursive;
+    margin: 4rem;
+}
+#pikachu{
+    height: 6rem;
+    width: 6rem;
+    margin: 0 20px 0 20px;
+    justify-self: start;
+}
+#professor{
+    height: 15rem;
+    width: 10rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+#charizard{
+    height: 12rem;
+    width: 12rem;
+    margin-left:2rem;
+}
